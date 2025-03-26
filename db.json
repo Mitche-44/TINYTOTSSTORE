@@ -1,10 +1,12 @@
 {
-    "toys": [
+  "products": [
     {
       "id": 1,
       "name": "Teddy Bear",
       "price": 20,
+      "quantity": 40,
       "category": "toys",
+      "sold": 15,
       "description": "Perfect for snuggling, with a sweet face and machine-washable fabric great for kids",
       "image": "/assets/teddy bear.jpg"
     },
@@ -12,25 +14,29 @@
       "id": 2,
       "name": "Toy car",
       "price": 10,
+      "quantity": 30,
       "category": "toys",
+      "sold": 10,
       "description": "Simple, fun vehicle designed for young children",
       "image": "/assets/toy car.jpg"
-    }, 
+    },
     {
       "id": 3,
       "name": "Silicon Balls",
       "price": 7,
+      "quantity": 50,
       "category": "toy",
+      "sold": 20,
       "description": "Sensory balls with squeaky sounds",
       "image": "/assets/silicone balls.jpg "
-    }
-  ],
-  "clothing": [
+    },
     {
       "id": 4,
       "name": "Pampers",
       "price": 15,
+      "quantity": 45,
       "category": "clothing",
+      "sold": 10,
       "description": "A  soft, cotton breathable material to keep babies dry and comfortable.",
       "image": "/assets/pampers.jpg"
     },
@@ -38,7 +44,9 @@
       "id": 5,
       "name": "Shorts",
       "price": 2,
+      "quantity": 60,
       "category": "clothing",
+      "sold": 15,
       "description": "Lightweight and breathable garments made from soft cotton fabric, ideal for warm weather or casual wear",
       "image": "/assets/shorts.jpg"
     },
@@ -46,15 +54,19 @@
       "id": 6,
       "name": "Cotton Rompers",
       "price": 3,
+      "quantity": 70,
       "category": "clothing",
+      "sold": 20,
       "description": "Quality cotton rompers",
-      "image": "/assets/romper.jpg"  
+      "image": "/assets/romper.jpg"
     },
     {
       "id": 7,
       "name": "Flannels",
       "price": 15,
+      "quantity": 20,
       "category": "clothing",
+      "sold": 15,
       "description": "4pcs cotton flannels",
       "image": "/assets/flannels.jpg"
     },
@@ -62,7 +74,9 @@
       "id": 8,
       "name": "Breast Pads",
       "price": 10,
-      "category": "toys",
+      "quantity": 30,
+      "category": "clothing",
+      "sold": 15,
       "description": "Absorbent, disposable or reusable pads worn inside a bra to absorb breast milk leakage.",
       "image": "/assets/breast-pads.jpg"
     },
@@ -70,7 +84,9 @@
       "id": 9,
       "name": "Onesies Body Suit",
       "price": 3,
+      "quantity": 40,
       "category": "clothing",
+      "sold": 30,
       "description": "Combines a top and bottom into a single piece, ",
       "image": "/assets/onesie.jpg"
     },
@@ -78,7 +94,9 @@
       "id": 10,
       "name": "shawl",
       "price": 16,
+      "quantity": 50,
       "category": "clothing",
+      "sold": 20,
       "description": "Fleece shawl for keeping the baby warm",
       "image": "/assets/shawl.jpeg"
     },
@@ -86,15 +104,19 @@
       "id": 11,
       "name": "Sweater",
       "price": 2,
+      "quantity": 60,
       "category": "clothing",
+      "sold": 45,
       "description": "Soft and warm material made from cotton",
       "image": "/assets/sweater.jpg"
     },
-    {    
+    {
       "id": 12,
       "name": "Towels",
       "price": 15,
+      "quantity": 70,
       "category": "clothing",
+      "sold": 50,
       "description": "3 pc hooded cotton towels with washcloths",
       "image": "/assets/towel.jpg"
     },
@@ -102,18 +124,19 @@
       "id": 13,
       "name": "Nursing Pillow",
       "price": 15,
+      "quantity": 80,
       "category": "clothing",
+      "sold": 60,
       "description": "U-shaped or crescent-shaped, and its firm yet soft structure offers optimal support during nursing sessions",
       "image": "/assets/nursingpillow.webp "
-    }
-  ],
-
-  "care products": [
-   
-  {"id": 14,
+    },
+    {
+      "id": 14,
       "name": "Baby Bottle",
       "price": 3,
+      "quantity": 90,
       "category": "feeding accessories",
+      "sold": 70,
       "description": "Anti-colic feeding bottle",
       "image": "/assets/Tommee_Tippee_Feeding_Bottle_3_Pack_260ml2_720x.jpg "
     },
@@ -121,7 +144,9 @@
       "id": 15,
       "name": "Manual Breast Pump",
       "price": 20,
-      "category": "care products ", 
+      "quantity": 100,
+      "category": "care products ",
+      "sold": 80,
       "description": "A device used by mothers to extract milk from their breasts, ",
       "image": "/assets/breast-pump.jpg"
     },
@@ -129,7 +154,9 @@
       "id": 16,
       "name": "Chest of drawers",
       "price": 240,
+      "quantity": 110,
       "category": "care products ",
+      "sold": 90,
       "description": "4 by 4 chest of drawers which offers easy storage for baby clothes and toys",
       "image": "/assets/4-by-4-Chest-of-Drawers-768x768.jpg"
     },
@@ -137,7 +164,9 @@
       "id": 17,
       "name": "Crib",
       "price": 250,
+      "quantity": 120,
       "category": "care products ",
+      "sold": 100,
       "description": "A small bed for babies or toddlers with high sides or rails",
       "image": "/assets/crib.jpg"
     },
@@ -145,25 +174,29 @@
       "id": 18,
       "name": "Johnson's Baby Oil",
       "price": 9,
+      "quantity": 130,
       "category": "care products ",
+      "sold": 110,
       "description": "A gentle, hypoallergenic moisturizing oil used on a baby’s skin to keep it soft, smooth, and hydrated.",
       "image": "/assets/baby oil.jpg"
     },
     {
       "id": 19,
       "name": "Soft Care Wipes",
-      "price": 3,
+      "price": 25,
+      "quantity": 140,
       "category": "care products ",
+      "sold": 120,
       "description": "Soft, moist cloths used for cleaning babies skin, ",
       "image": "/assets/wipes.jpeg"
-    }
-  ],
-  "food":[
+    },
     {
       "id": 20,
       "name": "Nan formula",
       "price": 18,
+      "quantity": 100,
       "category": "food",
+      "sold": 80,
       "description": "Infant formula made by Nestle, designed to provide essential nutrients for babies ",
       "image": "/assets/nan.png"
     }
