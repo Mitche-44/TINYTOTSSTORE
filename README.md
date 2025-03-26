@@ -34,17 +34,19 @@
      ```json
      {
      
-      "toys"[
+      "products"[
        {
          "id": 1,
          "name": "Teddy Bear",
-         "price": 15.99,
+         "price": 10,
+         "quantity":40,
          "category": "toys",
+         "sold":15,
          "description": "Perfect for snuggling, with a sweet face and machine-washable fabric great for kids",
-         "image": "teddy.jpg"
+         "image":"/assets/teddy bear.jpg"
        }
-     ]
-    }
+      ]
+     }
 
 2. **Shopping Cart**
    - Add and remove items from the cart.
@@ -101,11 +103,12 @@
 Use the command ( cd TINYTOTSSTORE) to navigate to the project folder.
 
 #### Link to Live Site
-- The live version of TinyTots Store can be found on GitHub Pages.
+- The live version of TinyTots Store can be found on (http://localhost:5500/).
+- To access json server; type (json-server --watch db. json) on your terminal.
 
 
 #### Copyright & License Information
-- Copyright (c) 2025 [Your Name Here]. All rights reserved.
+- Copyright (c) Tiny Tots Store. All rights reserved.
 
 - Licensed under the MIT License.
 
