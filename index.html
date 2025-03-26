@@ -23,13 +23,7 @@
             <li><a href="#products" >Products</a></li>
             <li><a href="#footer">Contact</a></li>
         </ul>
-        <div>
-            <form class="search">
-                <input type="text" class="search-input" placeholder="Search">
-                <button id="search-btn"> <i class='bx bx-search'></i></button>
-            </form>
-        </div>
-    
+        
     </div>
  </header>
 
@@ -39,7 +33,7 @@
             <h4>Welcome to Tiny Tots Store.</h4>
             <p>Discover a world of kid-friendly products and accessories for your little ones.</p>
 
-        <a href="#" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
+        <a href="#products" class="btn">Shop Now<i class='bx bx-right-arrow-alt'></i></a>
 
         </div>
     </section>
@@ -59,17 +53,33 @@
 
      </section>
 
+     <section id="products">
+        <div class="filters container">
+            <div class="filter-box">
+              <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="toys">Toys</option>
+                <option value="clothes">Clothes</option>
+                <option value="feeding accessories">feeding accessories</option>
+                <option value="care products">care products</option>
+                <option value="food">food</option>
+              </select>
+            </div>
+            
+            </div>
+          </div>
+        
+          <div id="productGrid" class="product-grid container"></div>
+        
+          <aside id="cart" class="cart container">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="totalPrice">0</span></p>
+            <button id="checkoutBtn">Checkout</button>
+    
+          </aside>
 
-
-
-
-
-
-
-
-
-
-
+     </section>
 
     <footer id="footer">
         <div id="footer-contact">
@@ -88,12 +98,6 @@
         <div id="footer-copy">&copy; 2025 Tiny Tots Store. All rights reserved</div>
 
     </footer>
-
-
-
-
-
-
 
 <script src="main.js"></script>
 <body>
