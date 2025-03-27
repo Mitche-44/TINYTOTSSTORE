@@ -21,10 +21,13 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#about" >About</a></li>
             <li><a href="#products" >Products</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="#footer-contact">Contact</a></li>
         </ul>
-        
+       
     </div>
+    <nav>
+        <a href="#"id="cart"><i class='bx bxs-cart'></i> </a> 
+    </nav>
  </header>
 
     <section class="main-home">
@@ -55,19 +58,12 @@
 
      <section id="products">
         <div class="filters container">
-            <div class="filter-box">
-              <select id="categoryFilter">
-                <option value="all">All Categories</option>
-                <option value="toys">Toys</option>
-                <option value="clothes">Clothes</option>
-                <option value="feeding accessories">feeding accessories</option>
-                <option value="care products">care products</option>
-                <option value="food">food</option>
-              </select>
-            </div>
-            
-            </div>
-          </div>
+            <form id="search-form">
+                <input type="text" id="search" placeholder="Search by name"required>
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </div>
+        
         
           <div id="productGrid" class="product-grid container"></div>
         
@@ -77,11 +73,11 @@
             <p>Total: $<span id="totalPrice">0</span></p>
             <button id="checkoutBtn">Checkout</button>
     
-          </aside>
+          </aside> 
 
      </section>
 
-    <footer id="footer">
+    <footer>
         <div id="footer-contact">
         <h3>Contact:</h3>
         <p>Email: mitchellngetich24@gmail.com</p>
@@ -90,7 +86,7 @@
         </div>
 
         <div id="footer-icons">
-            <h3>Follow Us:</h3>
+            <h3>Follow Us on:</h3>
             <a href="https://www.instagram.com/accounts/login/?hl=en"><i class='bx bxl-instagram' ></i></a>
             <a href="https://x.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
             <a href="https://en-gb.facebook.com/login.php/?/"><i class='bx bxl-facebook'></i> </a>
