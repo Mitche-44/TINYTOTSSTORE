@@ -22,6 +22,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    top: 0;
+    left: 0;
 
 }
 .nav-container{
@@ -84,6 +86,7 @@ h1:hover{
     color: orangered;
     
  }
+
 
  section{
     padding: 30px ;
@@ -156,13 +159,15 @@ h1:hover{
     color: black;
     font-size: 20px;
 }
-#footer{
+footer{
     display:inline;
     justify-content: space-between;
     color: blueviolet;
     margin-top: 10px;
     text-align: center;
-
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 #footer-contact{
@@ -211,19 +216,7 @@ h1:hover{
     margin: 20px 0;
   }
   
-  .filter-box {
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  #categoryFilter, #search {
-    padding: 10px;
-    width: 100%;
-    border: 2px solid #FF77A9;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
+ 
   /* Product Grid */
   .product-grid {
     display: grid;
@@ -333,5 +326,33 @@ h1:hover{
     transition: background-color 0.3s ease;
   }
   
+#search-form {
+  display: flex;
+  gap: 10px;
+  width: 30%;
+  position: relative;;
+}
 
+#search {
+  padding: 8px;
+  flex-grow: 1;
+  margin-right: 20px;
+  background: #FF77A9;
+  color: black;
+  cursor: pointer;
   
+}
+
+#search-btn {
+  width: 20%;
+  background-color: pink;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  
+}
+
+#search-btn:hover {
+  background-color: #45a049;
+}
