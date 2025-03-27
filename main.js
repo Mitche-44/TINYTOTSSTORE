@@ -7,8 +7,16 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // Initialize search functionality
   setupSearch();
-});
 
+fetch('http://localhost:3000/products')
+  .then(function (response) {
+    console.log(response);
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    
+  })
 
 // Fetch all products from the db.json file
 //This function fetches data from an API asynchronously, checks if the response is successful, parses the data as JSON, and then calls another function to display it. If any error occurs, it logs the error to the console.
@@ -149,4 +157,4 @@ async function editProduct(productId) {
   }
 }
 
-
+});
