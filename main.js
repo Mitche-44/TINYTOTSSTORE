@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
   e.preventDefault();
   fetchProducts();
 
-  // Search and filter functionality
-  document.getElementById('search').addEventListener('input', filterProducts);
-  document.getElementById('categoryFilter').addEventListener('change', filterProducts);
+  // Initialize search functionality
+  setupSearch();
 });
 
 
@@ -45,7 +44,54 @@ function renderProducts(products) {
   });
 }
 
+ // Search  functionality
+ function setupSearch() {
+ const searchInput = document.getElementById('search');
+  console.log(searchInput);
+  
+ const searchBtn = document.getElementById('search-btn')
+
+ console.log(searchBtn);
+ 
+ //  Verify elements exist
+ if (!searchInput || !searchBtn) {
+  console.error("Search elements not found!");
+  return;
+}
+
+ // Search when button is clicked
+ searchBtn.addEventListener('click', performSearch);
+  
+   
+  async function performSearch() {
+   const search = (searchInput.value);
+   console.log(search);
+   
+
+   try {
+     // Fetch all products first
+     const response = await fetch(apiUrl);
+     if (!response.ok) throw new Error('Failed to fetch products');
+     const allProducts = await response.json();
+     
+     // Filter products based on search term
+     const filteredProducts = allProducts.filter(product => 
+       product.name.toLowerCase().includes(search) ||
+       product.description.toLowerCase().includes(search)
+     );
+     
+     // Render filtered products
+     renderProducts(filteredProducts);
+     
+   } catch (error) {
+     console.error('search error:', error);
+   }
+ }
+
+ }
+
 // Add to Cart functionality
+
 function addToCart(product) {
   cart.push(product); //push() is an array method that adds a new element to the end of the array
   localStorage.setItem('cart', JSON.stringify(cart)); // saves the updated cart to localStorage
@@ -63,7 +109,9 @@ function removeFromCart(productId) {
 //renderCart() updates the DOM to display the list of items currently in the cart, along with a total price. Each item is shown with its name, price, and a "Remove" button. The total price of all items in the cart is calculated and displayed.
 function renderCart() {
   const cartItemsContainer = document.getElementById('cartItems');
+  
   const totalPriceElement = document.getElementById('totalPrice');
+  
   cartItemsContainer.innerHTML = '';
   
   let total = 0;
