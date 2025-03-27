@@ -98,7 +98,7 @@
 
 ### Image
 - *A sneak peek of my website*
-=======
+
 ![Website cover](https://github.com/user-attachments/assets/a3e31676-f32c-446b-8446-96f4369fb6f7)
 
 
