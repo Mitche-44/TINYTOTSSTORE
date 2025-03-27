@@ -95,6 +95,9 @@
 
 - The product data (name, price, category, and image) is stored in a products.json file, making it easy to update and manage the products dynamically.
 
+### Image
+- *A sneak peek of my website*
+
 ### Project Setup Instructions
 1.**Clone the repository:**
  (git clone git@github.com:Mitche-44/TINYTOTSSTORE.git)
