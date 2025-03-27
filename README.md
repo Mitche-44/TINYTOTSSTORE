@@ -103,7 +103,7 @@
 Use the command ( cd TINYTOTSSTORE) to navigate to the project folder.
 
 #### Link to Live Site
-- The live version of TinyTots Store can be found on (http://localhost:5500/products).
+- The live version of TinyTots Store can be found on (http://localhost:5500).
 - To access json server; type (json-server --watch db. json) on your terminal.
 
 
