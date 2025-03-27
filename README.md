@@ -95,12 +95,6 @@
 
 - The product data (name, price, category, and image) is stored in a products.json file, making it easy to update and manage the products dynamically.
 
-#### Images
-- *Sneak peak of the website.*
-- *Welcome to **Tiny Tots Store**, your go-to destination for adorable kids' clothing and accessories!*
-
-![The Tiny Tots Store!](/assets/images/website-cover.jpg "Website cover")
-
 ### Project Setup Instructions
 1.**Clone the repository:**
  (git clone git@github.com:Mitche-44/TINYTOTSSTORE.git)
