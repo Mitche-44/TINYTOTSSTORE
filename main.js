@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   // Initialize search functionality
   setupSearch();
+})
 
 fetch('http://localhost:3000/products')
   .then(function (response) {
@@ -157,4 +158,3 @@ async function editProduct(productId) {
   }
 }
 
-});
